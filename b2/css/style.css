@@ -1,0 +1,61 @@
+.body_p, .container .body_3, .container .body_2, .container .body_1 {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.container .btn_2, .container .btn_1 {
+  border: none;
+  padding: 20px;
+  font-size: large;
+  font-style: initial;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  justify-content: center;
+}
+.container .body_1 {
+  color: red;
+}
+.container .body_2 {
+  color: blue;
+}
+.container .body_3 {
+  color: green;
+}
+.container .btn_1 {
+  background-color: white;
+}
+.container .btn_2 {
+  background-color: gray;
+}
+
+.container-box {
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  justify-content: center;
+  width: 100vw;
+  height: 400px;
+  background-color: lightcyan;
+  position: relative;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */

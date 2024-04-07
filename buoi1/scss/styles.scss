@@ -1,0 +1,43 @@
+
+.text{
+  text-decoration: none;
+    color: black;
+    list-style: none;
+}
+
+*{
+  @extend .text;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import 'base/mixin';
+
+
+h2{
+  display: flex;
+  justify-content: center;
+}
+.lead-text{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.blog-list{
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  .post-detail{
+    @extend .text
+  }
+  .more{
+    margin-top: 10px;
+    border: 1px black solid;
+    display: inline-block;
+  }
+  .info-text{
+    width: 90%;
+  }
+}

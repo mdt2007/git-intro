@@ -1,0 +1,24 @@
+@mixin center {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    justify-content: center;
+}
+@mixin size($width,$height){
+    width: $width;
+    height: $height;}
+ @mixin position($pos)
+{
+    @if $pos== 'top-left'
+    { top: 0;
+    left: 0;}
+    @if $pos== 'top-right'
+    { top: 0;
+    right: 0;}
+    @if $pos== 'center'
+    { top: 50%;
+    left: 50%;}}
+@mixin text{
+    text-decoration: none;
+    color: black;
+}

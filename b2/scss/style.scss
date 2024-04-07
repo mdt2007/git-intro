@@ -1,0 +1,76 @@
+@import 'base/reset';
+@import 'base/variable';
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    justify-content: center;
+}
+@mixin size($width,$height){
+    width: $width;
+    height: $height;
+}
+.body_p{
+    font-size: 16px;
+    font-weight: 100
+}
+%btn_button{
+    border: none;
+    padding: 20px;
+    font-size: large;
+    font-style: initial;
+}
+.container{ @include center();
+    .body_1{
+       @extend .body_p;
+       color:red
+    }
+    .body_2{
+        @extend .body_p;
+        color:blue
+    }
+    .body_3{
+        @extend .body_p;
+        color:green
+    }
+    .btn_1{
+        @extend %btn_button;
+        background-color: white;
+    }
+    .btn_2{
+        @extend %btn_button;
+        background-color: gray;
+    }
+}
+
+.container-box{
+    @include center();
+    @include size(100vw,400px);
+    background-color:lightcyan;
+    position: relative;
+}
+@mixin position($pos)
+{
+@if $pos== 'top-left'
+{ top: 0;
+left: 0;}
+@if $pos== 'top-right'
+{ top: 0;
+right: 0;}
+@if $pos== 'center'
+{ top: 50%;
+left: 50%;}
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: $primary-color;
+    position: absolute;
+    @include position(top-right)
+}
+.box2{
+    @include size(200px,200px );
+    background-color: blue;
+}
+
